@@ -397,7 +397,10 @@ module Stupidedi
         E115  = t::ID.new(:E115 , "Port or Terminal Function Code"       , 1, 1,
           s::CodeList.build(
             "L"   => "Load Port",
-            "D"   => "Discharge Port"))
+            "D"   => "Discharge Port",
+            "R"   => "Place of Receipt",
+            "E"   => "Place of Delivery",
+            "I"   => "Interim Point"))
         E116  = t::ID.new(:E116 , "Postal Code"                          , 3, 15,
           s::CodeList.external("51"))
         E117  = t::Nn.new(:E117 , "Prepaid Amount"                       , 1, 15, 2)
@@ -3984,7 +3987,9 @@ module Stupidedi
             "OA" => "Out Gate",
             "AV" => "Available for Delivery",
             "IY" => "Delivered / In Yard",
-            "RD" => "Empty Returned"))
+            "C"  => "Estimated Time of Departure (ETD) Delay",
+            "E"  => "Estimated Time of Arrival (ETA) Delay",
+            "EE" => "Empty Equipment Dispatched"))
         E159  = t::AN.new(:E159 , "Status Location"                      , 3, 5)
         E161  = t::AN.new(:E161 , "Status Time"                          , 4, 4)
         E163  = t::ID.new(:E163 , "Stop Reason Code"                     , 2, 2,
@@ -4780,6 +4785,7 @@ module Stupidedi
             "038" => "Ship no later",
             "050" => "Received",
             "097" => "Transaction Creation",
+            "139" => "Estimated",
             "140" => "Actual",
             "150" => "Service Period Start",
             "151" => "Service Period End",
