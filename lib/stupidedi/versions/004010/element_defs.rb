@@ -400,7 +400,9 @@ module Stupidedi
             "D"   => "Discharge Port",
             "R"   => "Place of Receipt",
             "E"   => "Place of Delivery",
-            "I"   => "Interim Point"))
+            "I"   => "Interim Point",
+            "6".  => "Origin Rail Terminal",
+            "7".  => "Destination Rail Terminal"))
         E116  = t::ID.new(:E116 , "Postal Code"                          , 3, 15,
           s::CodeList.external("51"))
         E117  = t::Nn.new(:E117 , "Prepaid Amount"                       , 1, 15, 2)
