@@ -3980,6 +3980,7 @@ module Stupidedi
             "AE" => "Loaded on Vessel",
             "AL" => "Loaded on Rail",
             "VD" => "Vessel Departed from Origin Port",
+            "D1" => "Completed Unloading at Delivery Location",
             "RD" => "Rail Departure from Origin Intermodal Ramp",
             "CP" => "Customs Release",
             "CR" => "Carrier Release",
